@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "agent-gate"
+version = "0.1.0"
+description = "Gate que faz modelo pequeno render como especialista"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+[project.scripts]
+agent-gate = "agent_gate.cli:main"
+[tool.setuptools]
+packages = ["agent_gate"]
